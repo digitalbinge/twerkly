@@ -25,6 +25,7 @@ class TwerksController < ApplicationController
   # POST /twerks.json
   def create
     @twerk = Twerk.new(twerk_params)
+    @twerk.user = current_user
 
     respond_to do |format|
       if @twerk.save
