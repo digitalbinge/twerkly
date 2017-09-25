@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @twerk.content %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @twerk.user %>
+</p>
+
+<%= link_to 'Edit', edit_twerk_path(@twerk) %> |
+<%= link_to 'Back', twerks_path %>
